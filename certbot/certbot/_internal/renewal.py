@@ -466,6 +466,7 @@ def _renew_describe_results(config: configuration.NamespaceConfig, renew_success
 def handle_renewal_request(config: configuration.NamespaceConfig) -> Tuple[list, list]:
     """Examine each lineage; renew if due and report results"""
 
+    breakpoint()
     # This is trivially False if config.domains is empty
     if any(domain not in config.webroot_map for domain in config.domains):
         # If more plugins start using cli.add_domains,
